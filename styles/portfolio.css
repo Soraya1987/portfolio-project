@@ -35,6 +35,7 @@ p {
     line-height: 30px;
 }
 
+
 .hero {
     background: var(--secondary-color);
     text-align: center;
@@ -54,7 +55,23 @@ p {
     line-height: 1.5;
     font-size: 24px;
 }
-
+.about-section{
+    padding: 160px 20px;
+}
+.about-section h1{
+    font-size: 50px;
+    line-height: 80px;
+}
+.about-section h2{
+    font-size: 18px;
+    font-family: var(--default-font-family);
+}
+.about-section img {
+    border-radius: 10px;
+}
+.about-section-content{
+    margin: 30px;
+}
 .btn-branding {
     background: var(--branding-color);
     border-radius: 4px;
@@ -77,10 +94,11 @@ p {
     padding: 30px 30px;
 }
 
+
 @media (max-width: 900px) {
     h1 {
         font-size: 44px;
-        line-height: 2;
+        line-height: 56px;
     }
 
     h2 {
@@ -95,7 +113,14 @@ p {
         padding: 0;
         text-align: center;
     }
-   
+    .about-section{
+        text-align: center;
+        padding: 0;
+    }
+    .about-section img {
+        padding: 0;
+        width: 70%;
+    }
 }
 
 @media (min-width:900px )
@@ -109,6 +134,10 @@ p {
     img{  
         background:var(--secondary-color);
         padding: 50px 2px;
+    }
+    .about-section img{
+        padding: 0;
+        width: 70%;
     }
     .project-desciption {
        padding: 0 30px;
@@ -127,7 +156,9 @@ p {
     img {
         padding:0;
     }
-
+    .about-section img {
+        width: 70%;
+    }
     .project-desciption {
         margin: 0;
         padding: 30px 30px;
